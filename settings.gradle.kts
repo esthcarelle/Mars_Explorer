@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Mars Explorer"
 include(":app")
- 
+include(":core")
+include(":lib")
+include(":domain")
