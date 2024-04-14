@@ -23,4 +23,5 @@ rootProject.name = "Mars Explorer"
 include(":app")
 include(":core")
 include(":lib")
-include(":domain")
+include(":data")
+include(":data:model")
