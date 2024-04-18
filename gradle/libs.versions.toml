@@ -17,6 +17,9 @@ hilt-navigation-compose = "1.0.0"
 kotlinx-serialization-json = "1.4.1"
 kover = "0.5.0"
 ktlint = "11.0.0"
+accompanist = "0.21.1-beta"
+coroutines-version = "1.6.4"
+core-testing = "2.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -40,6 +43,9 @@ hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hil
 hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
 hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
+compose-accompanist = { module = "com.google.accompanist:accompanist-navigation-animation",version.ref = "accompanist" }
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines-version"}
+core-testing-version = { module = "androidx.arch.core:core-testing", version.ref = "core-testing"}
 
 
 [plugins]
