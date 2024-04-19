@@ -66,6 +66,9 @@ dependencies {
     implementation(libs.compose.accompanist)
 
     implementation (project(":core"))
+    implementation (project(":core:common"))
+    implementation (project(":core:design"))
+    implementation (project(":core:utils"))
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
