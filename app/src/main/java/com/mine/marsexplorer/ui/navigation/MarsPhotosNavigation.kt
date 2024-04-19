@@ -1,10 +1,25 @@
 package com.mine.marsexplorer.ui.navigation
 
 import androidx.compose.animation.ExperimentalAnimationApi
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
+import androidx.navigation.navArgument
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
+import com.mine.design.navigation.Screen
+import com.mine.utils.Constants.DETAILS_ROUTE
+import com.mine.utils.Constants.IMAGE
+import com.mine.utils.Constants.LANDING_DATE
+import com.mine.utils.Constants.LAUNCH_DATE
+import com.mine.utils.Constants.MINUS_THREE_HUNDRED
+import com.mine.utils.Constants.NAME
+import com.mine.utils.Constants.THREE_HUNDRED
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
