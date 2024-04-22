@@ -9,7 +9,6 @@ import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavType
-import androidx.navigation.compose.NavHost
 import androidx.navigation.navArgument
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import com.mine.design.navigation.Screen
@@ -20,12 +19,14 @@ import com.mine.utils.Constants.LAUNCH_DATE
 import com.mine.utils.Constants.MINUS_THREE_HUNDRED
 import com.mine.utils.Constants.NAME
 import com.mine.utils.Constants.THREE_HUNDRED
+import com.google.accompanist.navigation.animation.AnimatedNavHost
+import com.google.accompanist.navigation.animation.composable
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun MarsPhotosNavigation(toggleTheme: () -> Unit) {
     val navController = rememberAnimatedNavController()
-    NavHost(navController, startDestination = Screen.Home.route) {
+    AnimatedNavHost(navController, startDestination = Screen.Home.route) {
         composable(
             Screen.Home.route,
             exitTransition = {
