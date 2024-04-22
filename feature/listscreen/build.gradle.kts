@@ -50,6 +50,7 @@ dependencies {
     implementation (project(":core:common"))
     implementation (project(":core:design"))
     implementation (project(":core:utils"))
+    implementation (project(":data:model"))
 
     implementation(libs.coil.compose)
     implementation(libs.coil)
