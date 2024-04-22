@@ -20,6 +20,7 @@ ktlint = "11.0.0"
 accompanist = "0.29.1-alpha"
 coroutines-version = "1.6.4"
 core-testing = "2.2.0"
+coil = "2.2.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -46,7 +47,9 @@ hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", vers
 compose-accompanist = { module = "com.google.accompanist:accompanist-navigation-animation",version.ref = "accompanist" }
 coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines-version"}
 core-testing-version = { module = "androidx.arch.core:core-testing", version.ref = "core-testing"}
-
+coil = {module = "io.coil-kt:coil",version.ref = "coil"}
+coil-compose = { module = "io.coil-kt:coil-compose",version.ref = "coil"}
+coil-svg = { module = "io.coil-kt:coil-svg", version.ref = "coil"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
