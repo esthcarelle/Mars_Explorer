@@ -17,7 +17,7 @@ hilt-navigation-compose = "1.0.0"
 kotlinx-serialization-json = "1.4.1"
 kover = "0.5.0"
 ktlint = "11.0.0"
-accompanist = "0.21.1-beta"
+accompanist = "0.29.1-alpha"
 coroutines-version = "1.6.4"
 core-testing = "2.2.0"
 
