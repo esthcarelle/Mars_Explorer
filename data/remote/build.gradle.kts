@@ -37,6 +37,18 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.hilt.android)
+    implementation(libs.hilt.compiler)
+    implementation(libs.retrofit)
+    implementation(libs.okhttp3)
+    implementation(libs.moshi)
+    implementation(libs.interceptor)
+
+    implementation (project(":data:model"))
+    implementation (project(":core:common"))
+    implementation (project(":core:utils"))
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

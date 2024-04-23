@@ -37,6 +37,14 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+
+    implementation(libs.hilt.android)
+    implementation(libs.hilt.compiler)
+
+    implementation (project(":data:model"))
+    implementation (project(":data:remote"))
+    implementation (project(":core:common"))
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
