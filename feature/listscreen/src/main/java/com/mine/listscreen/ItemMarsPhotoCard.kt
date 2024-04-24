@@ -1,30 +1,30 @@
 package com.mine.listscreen
 
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardColors
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.MaterialTheme.typography
-import androidx.compose.material3.Text
+import androidx.compose.material.Card
+import androidx.compose.material.CircularProgressIndicator
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import coil.compose.SubcomposeAsyncImage
+import com.mine.design.components.DateTag
+import com.mine.design.theme.typography
 import com.mine.model.Photo
 
 @Composable
@@ -35,8 +35,8 @@ fun ItemMarsPhotoCard(photo: Photo, onItemClicked: (photo: Photo) -> Unit) {
             .padding(8.dp)
             .clip(RoundedCornerShape(16.dp))
             .clickable(onClick = { onItemClicked(photo) }),
-        elevation = CardDefaults.cardElevation(0.dp),
-        colors = CardDefaults.cardColors(contentColor = Color.White ,disabledContainerColor = Color.Black ,disabledContentColor = Color.Gray,containerColor = MaterialTheme.colorScheme.onSurface)
+        elevation = 0.dp,
+        backgroundColor = MaterialTheme.colors.onSurface
     ) {
         Row(
             modifier = Modifier
@@ -62,7 +62,7 @@ fun ItemMarsPhotoCard(photo: Photo, onItemClicked: (photo: Photo) -> Unit) {
                 Text(
                     text = photo.camera.name,
                     modifier = Modifier.padding(0.dp, 0.dp, 12.dp, 0.dp),
-                    color = MaterialTheme.colorScheme.surface,
+                    color = MaterialTheme.colors.surface,
                     fontWeight = FontWeight.Bold,
                     style = typography.subtitle1
                 )
