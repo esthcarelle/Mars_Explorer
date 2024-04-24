@@ -44,12 +44,14 @@ dependencies {
     implementation(libs.androidx.material)
     implementation(libs.hilt.android)
     implementation(libs.hilt.compiler)
+    implementation(libs.hilt.navigation.compose)
     implementation(libs.compose.accompanist)
 
     implementation (project(":core:common"))
     implementation (project(":core:design"))
     implementation (project(":core:utils"))
     implementation (project(":data:model"))
+    implementation (project(":domain"))
 
     implementation(libs.coil.compose)
     implementation(libs.coil)
