@@ -1,24 +1,23 @@
 package com.mine.design.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.material3.MaterialTheme
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.darkColors
+import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
-import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.lightColorScheme
-import androidx.compose.material3.lightColorScheme
 
-private val DarkColorPalette = darkColorScheme(
+private val DarkColorPalette = darkColors(
     primary = Purple200,
-    primaryContainer = Purple700,
+    primaryVariant = Purple700,
     secondary = Teal200,
     background = blueBGNight,
     surface = pinkText,
     onSurface = cardNight
 )
 
-private val LightColorPalette = lightColorScheme(
+private val LightColorPalette = lightColors(
     primary = Purple500,
-    primaryContainer = Purple700,
+    primaryVariant = Purple700,
     secondary = Teal200,
     background = blueBG,
     surface = blueText,
@@ -34,7 +33,7 @@ fun MarsPhotosTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Compos
     }
 
     MaterialTheme(
-        colorScheme = colors,
+        colors = colors,
         typography = typography,
         shapes = Shapes,
         content = content
