@@ -8,6 +8,7 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.runtime.Composable
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavType
 import androidx.navigation.navArgument
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
@@ -21,6 +22,8 @@ import com.mine.utils.Constants.NAME
 import com.mine.utils.Constants.THREE_HUNDRED
 import com.google.accompanist.navigation.animation.AnimatedNavHost
 import com.google.accompanist.navigation.animation.composable
+import com.mine.detailscreen.MarsPhotoDetails
+import com.mine.listscreen.MarsPhotosList
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
