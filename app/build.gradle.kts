@@ -64,11 +64,14 @@ dependencies {
     implementation(libs.hilt.android)
     implementation(libs.hilt.compiler)
     implementation(libs.compose.accompanist)
+    implementation(libs.hilt.navigation.compose)
+    implementation(libs.androidx.appcompat)
 
-    implementation (project(":core"))
     implementation (project(":core:common"))
     implementation (project(":core:design"))
     implementation (project(":core:utils"))
+    implementation (project(":feature:listscreen"))
+    implementation (project(":feature:detailscreen"))
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
